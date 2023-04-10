@@ -1,0 +1,31 @@
+<svg width="1512" height="876" viewBox="0 0 1512 876" fill="none" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <mask id="mask0_101_340" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+        width="1512" height="876">
+        <rect width="1512" height="876" fill="url(#pattern0)" fill-opacity="0.2" />
+    </mask>
+    <g mask="url(#mask0_101_340)">
+        <rect width="1512" height="876" fill="url(#paint0_linear_101_340)" />
+        <rect width="1512" height="876" fill="url(#paint1_radial_101_340)" />
+    </g>
+    <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.0529101"
+            height="0.0913242">
+            <use xlink:href="#image0_101_340" transform="scale(0.000661376 0.00114155)" />
+        </pattern>
+        <linearGradient id="paint0_linear_101_340" x1="-106.313" y1="-27.375" x2="787.365"
+            y2="1484.08" gradientUnits="userSpaceOnUse">
+            <stop offset="0.34375" stop-color="#7DD0FF" />
+            <stop offset="0.666667" stop-color="#FF60C9" stop-opacity="0.8" />
+        </linearGradient>
+        <radialGradient id="paint1_radial_101_340" cx="0" cy="0" r="1"
+            gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(-7.0023e-06 568.031) rotate(-50.7876) scale(485.806 615.874)">
+            <stop stop-color="#FF4AED" />
+            <stop offset="1" stop-color="#961DA0" stop-opacity="0" />
+        </radialGradient>
+        <image id="image0_101_340" width="80" height="80"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAImSURBVHgB7d1RbtpAEMbxGSr1PM0N2jtAVEGlkpM0OUmo1KAqzh3SG7TnqVRtdyygttldlr7sSP7/XgzYvHxiwY6/UXS1CUEOVGT7/KRfBVm3m/A5BrY7Pl8Md9oOO0CQNA3PLKYHEWJaKjyziIndTV8kxLFceJad2na1Dtv4Bfg43c93Yjm8bq87PT7PhSi/5abr9JfM0PJTeK9BXs92HMKzh6fvwP6FyXKOv88Pcw3PvHzTH/HTN16Bg/CS7JNopzbLdbgX9JabsLNM+lVaIx74TjBiy1kAAAAAAAAAAAAAzNk1tw1XKz+3XRfiQLxp/WgVippCU3/MW/l5uw5fxAGVxiy8uNken5cKTdOiTwz9/nmvD9JQ0wBz5Z1UiIWW1E23b9ffabqErbxT00+8UDFrWn5qvoRNqZ9o21I/TxpzEaDJ9hNTnIRn3ARoqkJ0FJ5xFaAphugsPOPiPHBIVcL/7GvF1Scw+2s74K347ibAmvCOPIXoIsDSeV6/dTyC0TzAS3MY9tDzHIvLS7nUr20uxPBHPrx8j1c0jTS/lKudw0jOscT3tgzPjWvmME5zLPE9gn+u+YMqMxsAAAAAAAAAAADA7C0/cttwKncr9ayZYF0VfSOvh/EDSHmOZdSNSRR9dt2T3smMXZpjOQWYa0m1Lu+0VDPH0i/hUsVszuWdmjkWrennzV2pn6jDf0ZwQnhnciGe9wMJLynVTzTjAAmvKBXiX0YmUheriD/4AAAAAElFTkSuQmCC" />
+    </defs>
+</svg>
+    

@@ -1,10 +1,7 @@
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import Link from 'next/link';
 import { useState } from 'react';
 import Joinlist from '@/components/Joinlist';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   const [isActive, setIsActive] = useState(false);

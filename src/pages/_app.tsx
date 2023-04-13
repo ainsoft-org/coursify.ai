@@ -13,6 +13,6 @@ export default function App({ Component, pageProps }: AppProps) {
             height={4}
             showOnShallow={true}
         />
-        <Component {...pageProps} />);
+        <Component {...pageProps} />
       </div>);
 }

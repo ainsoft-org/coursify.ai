@@ -215,8 +215,8 @@ export default function Home() {
                 </h5>
                 <p className="lg:text-2xl text-[18px] leading-[29px] text-[#D6D6D6] font-inter font-normal">
                   Coursify.AI has completely revolutionized the way I design my
-                  courses. The AI-generated content adapts to my students'
-                  needs, making learning more engaging and enjoyable. I've seen
+                  courses. The AI-generated content adapts to my students
+                  needs, making learning more engaging and enjoyable. I have seen
                   a noticeable improvement in knowledge retention and overall
                   success.
                 </p>
@@ -270,7 +270,7 @@ export default function Home() {
                   Jessica R. E-Learning Specialist
                 </h5>
                 <p className="lg:text-2xl text-[18px] leading-[29px] text-[#D6D6D6]  font-inter font-normal">
-                  I've tried multiple course creation platforms, but Coursify.AI
+                  I&apos;ve tried multiple course creation platforms, but Coursify.AI
                   stands out for its powerful analytics and insights. The
                   data-driven approach has enabled me to optimize my courses and
                   achieve better learning outcomes for my students. I highly
@@ -380,7 +380,7 @@ export default function Home() {
                 </h5>
                 <ul className="mb-4 list-disc lg:pl-9 pl-6">
                   <li className="lg:text-2xl text-[18px] font-inter font-normal text-[#D6D6D6]">
-                    Tailored to your organization's needs
+                    Tailored to your organization&apos;s needs
                   </li>
                   <li className="lg:text-2xl text-[18px] font-inter font-normal text-[#D6D6D6]">
                     Unlimited user accounts

@@ -7,7 +7,7 @@ const Success = ({ setOpenModal }: any) => {
       <div className="fixed inset-0 w-full h-full bg-[#1E1E1E]"></div>
       <div className="flex items-center min-h-screen px-4 py-8">
         <div
-          className="relative w-full max-w-[545px] p-4 md:py-9 md:px-10 p-4 mx-auto bg-[#0D0D0D] rounded-lg border border-solid border-[#242A30]"
+          className="relative w-full max-w-[545px] md:py-9 md:px-10 p-4 mx-auto bg-[#0D0D0D] rounded-lg border border-solid border-[#242A30]"
           style={{
             boxShadow:
               '0px 0px 2px rgba(0, 0, 0, 0.12), 0px 20px 20px rgba(0, 0, 0, 0.08)',

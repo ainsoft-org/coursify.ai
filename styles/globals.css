@@ -92,3 +92,20 @@ body {
   background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
   radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
 }
+
+.yes-btn {
+  background: radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%),
+  linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%);
+}
+
+.yes-btn.disabled {
+  background: #4F4F4F;
+  color: #161616;
+}
+
+.navar-item.active {
+  background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
+radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
+-webkit-background-clip: text !important;
+-webkit-text-fill-color: transparent;
+}

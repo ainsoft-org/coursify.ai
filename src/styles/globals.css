@@ -19,137 +19,65 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+
 .join-waitlist-btn {
-  background: radial-gradient(
-      127.5% 127.5% at -7.5% 60.5%,
-      rgba(47, 205, 255, 0.75) 0%,
-      rgba(145, 92, 213, 0.1275) 100%
-    ),
-    linear-gradient(130.03deg, #2f76ff 7.3%, #7270ff 53.65%, #ff2ff7 96.62%);
+  background: radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%), linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%);
 }
 
 .hero-section {
-  background: radial-gradient(
-      42.97% 42.97% at 0% 64.84%,
-      rgba(255, 74, 237, 0.15) 0%,
-      rgba(150, 29, 160, 0) 100%
-    ),
-    linear-gradient(
-      134.42deg,
-      rgba(125, 208, 255, 0.1) 34.52%,
-      rgba(255, 96, 201, 0.08) 71.73%
-    ),
-    #0d0d0d;
+  background: radial-gradient(42.97% 42.97% at 0% 64.84%, rgba(255, 74, 237, 0.15) 0%, rgba(150, 29, 160, 0) 100%), linear-gradient(134.42deg, rgba(125, 208, 255, 0.1) 34.52%, rgba(255, 96, 201, 0.08) 71.73%), #0D0D0D;
+  background-image: url('../../public/assets/images/hero-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.hero-section:after {
-  content: url(../../public/assets/images/hero-bg.svg);
+/* .hero-section:after {
+  content: url(../public/assets/images/hero-bg.svg);
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-}
+} */
 
 .gradient-text {
-  background: linear-gradient(
-      130.03deg,
-      #2f76ff 7.3%,
-      #7270ff 53.65%,
-      #ff2ff7 96.62%
-    ),
-    radial-gradient(
-        127.5% 127.5% at -7.5% 60.5%,
-        rgba(47, 205, 255, 0.75) 0%,
-        rgba(145, 92, 213, 0.1275) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    linear-gradient(0deg, #ffffff, #ffffff) !important;
+  background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
+    radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ,
+    linear-gradient(0deg, #FFFFFF, #FFFFFF) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
 
 .benefits-section {
-  background: radial-gradient(
-      42.97% 42.97% at 0% 64.84%,
-      rgba(255, 74, 237, 0.28) 0%,
-      rgba(150, 29, 160, 0) 100%
-    ),
-    linear-gradient(
-      134.42deg,
-      rgba(125, 208, 255, 0.07) 34.52%,
-      rgba(255, 96, 201, 0.056) 71.73%
-    ),
-    #111111;
+  background: radial-gradient(42.97% 42.97% at 0% 64.84%, rgba(255, 74, 237, 0.28) 0%, rgba(150, 29, 160, 0) 100%), linear-gradient(134.42deg, rgba(125, 208, 255, 0.07) 34.52%, rgba(255, 96, 201, 0.056) 71.73%), #111111;
 }
 
 .benefits-section .benefit-card {
-  background: radial-gradient(
-      42.97% 42.97% at 0% 64.84%,
-      rgba(255, 74, 237, 0.28) 0%,
-      rgba(150, 29, 160, 0) 100%
-    ),
-    linear-gradient(
-      134.42deg,
-      rgba(125, 208, 255, 0.07) 34.52%,
-      rgba(255, 96, 201, 0.056) 71.73%
-    ),
-    #0d0d0d;
+  background: radial-gradient(42.97% 42.97% at 0% 64.84%, rgba(255, 74, 237, 0.28) 0%, rgba(150, 29, 160, 0) 100%), linear-gradient(134.42deg, rgba(125, 208, 255, 0.07) 34.52%, rgba(255, 96, 201, 0.056) 71.73%), #0D0D0D;
   box-shadow: 0px 0px 10px rgba(76, 72, 255, 0.04);
 }
 
 .pricing-section {
-  background: radial-gradient(
-      42.97% 42.97% at 0% 64.84%,
-      rgba(255, 74, 237, 0.28) 0%,
-      rgba(150, 29, 160, 0) 100%
-    ),
-    linear-gradient(
-      134.42deg,
-      rgba(125, 208, 255, 0.07) 34.52%,
-      rgba(255, 96, 201, 0.056) 71.73%
-    ),
-    #111111;
+  background: radial-gradient(42.97% 42.97% at 0% 64.84%, rgba(255, 74, 237, 0.28) 0%, rgba(150, 29, 160, 0) 100%), linear-gradient(134.42deg, rgba(125, 208, 255, 0.07) 34.52%, rgba(255, 96, 201, 0.056) 71.73%), #111111;
 }
 
 .pricing-section .pricing-card {
-  background: radial-gradient(
-      42.97% 42.97% at 0% 64.84%,
-      rgba(255, 74, 237, 0.28) 0%,
-      rgba(150, 29, 160, 0) 100%
-    ),
-    linear-gradient(
-      134.42deg,
-      rgba(125, 208, 255, 0.07) 34.52%,
-      rgba(255, 96, 201, 0.056) 71.73%
-    ),
-    #0d0d0d;
+  background: radial-gradient(42.97% 42.97% at 0% 64.84%, rgba(255, 74, 237, 0.28) 0%, rgba(150, 29, 160, 0) 100%), linear-gradient(134.42deg, rgba(125, 208, 255, 0.07) 34.52%, rgba(255, 96, 201, 0.056) 71.73%), #0D0D0D;
   box-shadow: 0px 0px 10px rgba(76, 72, 255, 0.04);
 }
 
 /*********Login**********/
 
 .login-container {
-  background: radial-gradient(
-      42.97% 42.97% at 0% 64.84%,
-      rgba(255, 74, 237, 0.15) 0%,
-      rgba(150, 29, 160, 0) 100%
-    ),
-    linear-gradient(
-      134.42deg,
-      rgba(125, 208, 255, 0.1) 34.52%,
-      rgba(255, 96, 201, 0.08) 71.73%
-    ),
-    #0d0d0d;
-  background-image: url(../../public/assets/images/login-bg.png);
+  background: radial-gradient(42.97% 42.97% at 0% 64.84%, rgba(255, 74, 237, 0.15) 0%, rgba(150, 29, 160, 0) 100%), linear-gradient(134.42deg, rgba(125, 208, 255, 0.1) 34.52%, rgba(255, 96, 201, 0.08) 71.73%), #0D0D0D;
+  background-image: url('../../public/assets/images/login-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -159,59 +87,28 @@ body {
 }
 
 .login-container .btn:hover {
-  background: linear-gradient(
-      130.03deg,
-      #2f76ff 7.3%,
-      #7270ff 53.65%,
-      #ff2ff7 96.62%
-    ),
-    radial-gradient(
-      127.5% 127.5% at -7.5% 60.5%,
-      rgba(47, 205, 255, 0.75) 0%,
-      rgba(145, 92, 213, 0.1275) 100%
-    );
+  background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
+    radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
 }
 
 .login-container .btn.active {
-  background: linear-gradient(
-      130.03deg,
-      #2f76ff 7.3%,
-      #7270ff 53.65%,
-      #ff2ff7 96.62%
-    ),
-    radial-gradient(
-      127.5% 127.5% at -7.5% 60.5%,
-      rgba(47, 205, 255, 0.75) 0%,
-      rgba(145, 92, 213, 0.1275) 100%
-    );
+  background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
+  radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
 }
 
 .yes-btn {
-  background: radial-gradient(
-      127.5% 127.5% at -7.5% 60.5%,
-      rgba(47, 205, 255, 0.75) 0%,
-      rgba(145, 92, 213, 0.1275) 100%
-    ),
-    linear-gradient(130.03deg, #2f76ff 7.3%, #7270ff 53.65%, #ff2ff7 96.62%);
+  background: radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%),
+  linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%);
 }
 
 .yes-btn.disabled {
-  background: #4f4f4f;
+  background: #4F4F4F;
   color: #161616;
 }
 
 .navar-item.active {
-  background: linear-gradient(
-      130.03deg,
-      #2f76ff 7.3%,
-      #7270ff 53.65%,
-      #ff2ff7 96.62%
-    ),
-    radial-gradient(
-      127.5% 127.5% at -7.5% 60.5%,
-      rgba(47, 205, 255, 0.75) 0%,
-      rgba(145, 92, 213, 0.1275) 100%
-    );
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
+radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
+-webkit-background-clip: text !important;
+-webkit-text-fill-color: transparent;
 }

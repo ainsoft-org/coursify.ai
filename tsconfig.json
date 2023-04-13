@@ -16,7 +16,6 @@
     "incremental": true,
     "baseUrl": "src",
     "paths": {
-      "@ui/*": ["./components/ui/index.ts"],
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"],
       "@auth/*": ["auth/*"],

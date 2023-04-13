@@ -143,7 +143,7 @@ export default function Home() {
               </p>
               <button
                 type="button"
-                className="join-waitlist-btn font-unbounded font-normal text-white font-medium lg:text-[28px] text-[22px] px-6 py-3 text-center mr-3 md:mr-0"
+                className="join-waitlist-btn font-unbounded text-white font-medium lg:text-[28px] text-[22px] px-6 py-3 text-center mr-3 md:mr-0"
                 onClick={() => {
                   setShowModal(true);
                 }}

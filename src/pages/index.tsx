@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import Joinlist from '@/components/Joinlist';
+import { Joinlist } from '@components/form';
 
 export default function Home() {
   const [isActive, setIsActive] = useState(false);

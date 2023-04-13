@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,10 +14,19 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"]
+      "@ui/*": ["./components/ui/index.ts"],
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@auth/*": ["auth/*"],
+      "@form/*": ["form/*"],
+      "@helpers/*": ["helpers/*"],
+      "@hocs/*": ["hocs/*"],
+      "@public/*": ["public/*"],
+      "@utils/*": ["utils/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "images.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

@@ -1,8 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Success from './Success';
 
 const Joinlist = ({ setOpenModal }: any) => {
   const [showModal, setShowModal] = useState(false);
+  const [inputs, setInputs] = useState({
+    name: '',
+    email: '',
+    pname: '',
+    students:'',
+  });
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setInputs((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  useEffect(() => {
+    const isFormFilled =
+      inputs.name.trim() !== '' &&
+      inputs.email.trim() !== '' &&
+      inputs.students.trim() !== '' &&
+      inputs.pname.trim() !== '';
+
+    setIsButtonDisabled(!isFormFilled);
+  }, [inputs]);
   return (
     <div className="fixed inset-0 overflow-y-auto z-30">
       <div className="fixed inset-0 w-full h-full bg-[#1E1E1E] opacity-60"></div>
@@ -42,8 +64,10 @@ const Joinlist = ({ setOpenModal }: any) => {
               </label>
               <input
                 type="text"
+                name='name'
                 placeholder="Your Name"
                 className="bg-[#0D0D0D] border-[#3A3A3A] border border-solid rounded-lg px-4 py-[13.5px] text-[#ACACAC]"
+                onChange={handleInputChange}
               />
             </div>
             <div className="flex flex-col mb-4">
@@ -53,7 +77,9 @@ const Joinlist = ({ setOpenModal }: any) => {
               <input
                 type="text"
                 placeholder="Email"
+                name="email"
                 className="bg-[#0D0D0D] border-[#3A3A3A] border border-solid rounded-lg px-4 py-[13.5px] text-[#ACACAC]"
+                onChange={handleInputChange}
               />
             </div>
             <div className="flex flex-col mb-4">
@@ -62,8 +88,10 @@ const Joinlist = ({ setOpenModal }: any) => {
               </label>
               <input
                 type="text"
+                name='pname'
                 placeholder="Specify the platform name"
                 className="bg-[#0D0D0D] border-[#3A3A3A] border border-solid rounded-lg px-4 py-[13.5px] text-[#ACACAC]"
+                onChange={handleInputChange}
               />
             </div>
             <div className="flex flex-col mb-4">
@@ -72,8 +100,10 @@ const Joinlist = ({ setOpenModal }: any) => {
               </label>
               <input
                 type="text"
+                name='students'
                 placeholder="Number of students"
                 className="bg-[#0D0D0D] border-[#3A3A3A] border border-solid rounded-lg px-4 py-[13.5px] text-[#ACACAC]"
+                onChange={handleInputChange}
               />
             </div>
             <div className="mt-9 flex justify-end">
@@ -87,7 +117,8 @@ const Joinlist = ({ setOpenModal }: any) => {
               <button
                 onClick={() => setShowModal(true)}
                 type="button"
-                className="ml-4 yes-btn rounded-lg text-6 font-inter font-medium max-w-[180px] flex items-center justify-center w-full h-[44px] text-white"
+                className={`${!isButtonDisabled ? '' :'disabled'} ml-4 yes-btn rounded-lg text-6 font-inter font-medium max-w-[180px] flex items-center justify-center w-full h-[44px] text-white`}
+                disabled={isButtonDisabled}
               >
                 Yes, confirm
               </button>

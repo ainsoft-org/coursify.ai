@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Apercu';
+  src: url('../../public/fonts/Apercu-Regular.otf');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -111,4 +116,35 @@ body {
 radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
 -webkit-background-clip: text !important;
 -webkit-text-fill-color: transparent;
+}
+
+.blog-hero-section {
+  background: radial-gradient(42.97% 42.97% at 0% 64.84%, rgba(255, 74, 237, 0.15) 0%, rgba(150, 29, 160, 0) 100%), linear-gradient(134.42deg, rgba(125, 208, 255, 0.1) 34.52%, rgba(255, 96, 201, 0.08) 71.73%), #0D0D0D;
+  background-image: url('../../public/assets/images/blog-banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog-hero-section .blog-category-btn.active {
+  background: radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%), linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+  font-weight: 700;
+}
+
+.blog-readmore-btn:hover {
+  background: radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%), linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%);
+  border-color: #0D0D0D;
+}
+
+.pagination-btn:hover {
+  background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
+radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
+border: #0D0D0D;
+}
+
+.pagination-btn.active {
+  background: linear-gradient(130.03deg, #2F76FF 7.3%, #7270FF 53.65%, #FF2FF7 96.62%),
+radial-gradient(127.5% 127.5% at -7.5% 60.5%, rgba(47, 205, 255, 0.75) 0%, rgba(145, 92, 213, 0.1275) 100%);
+border: #0D0D0D;
+font-weight: 700;
 }

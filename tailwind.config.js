@@ -16,6 +16,8 @@ module.exports = {
         sora: ['Sora', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         unbounded: ['Unbounded', 'cursive'],
+        apercu: ['Apercu'],
+        mulish: ['Mulish', 'sans-serif']
       },
     },
   },

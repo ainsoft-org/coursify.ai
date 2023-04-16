@@ -92,7 +92,7 @@ export default function Navbar({
             </li>
             <li>
               <Link
-                href="#"
+                href="/blogs"
                 className="block py-2 pl-3 pr-4 lg:p-0 text-white font-sora font-normal"
               >
                 Blog

@@ -6,7 +6,7 @@ export default function Pricings() {
     <section className="pricing-section relative w-full bg-[#101010] py-20 lg:py-24">
       <div className="mx-auto max-w-[1352px] px-4">
         <div className="mb-14 max-w-[538px]">
-          <h1 className="Lg:leading-[71px] mb-6 font-unbounded text-[46px] font-semibold capitalize leading-[59px] text-white lg:text-[57px]">
+          <h1 className="mb-6 font-unbounded text-[46px] font-semibold capitalize leading-[59px] text-white lg:text-[57px] lg:leading-[71px]">
             😉 Pricing
           </h1>
           <p className="font-inter text-xl font-normal leading-[29px] text-white lg:text-2xl">

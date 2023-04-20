@@ -23,7 +23,9 @@
       "@helpers/*": ["helpers/*"],
       "@hocs/*": ["hocs/*"],
       "@public/*": ["public/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@layout": ["layout/index.ts"],
+      "@/*": ["*"]
     }
   },
   "include": ["next-env.d.ts", "images.d.ts", "**/*.ts", "**/*.tsx"],

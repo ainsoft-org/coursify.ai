@@ -1,1 +1,0 @@
-export const posts = process.env.NEXT_PUBLIC_BLOGPOSTS

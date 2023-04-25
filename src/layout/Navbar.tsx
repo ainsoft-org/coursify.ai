@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { classNames } from '@helpers/index';
+import { pathes } from '@/data';
 
-export default function Navbar({
-  setShowModal,
-}: {
-  setShowModal: (value: boolean) => void;
-}) {
+export default function Navbar({ setShowModal }: { setShowModal: (value: boolean) => void }) {
   const [isActive, setIsActive] = useState(false);
+  const { pathname } = useRouter();
   return (
-    <nav className="bg-[#0D0D0D] fixed w-full z-20 top-0 left-0 h-[100px]">
-      <div className="max-w-[1352px] flex flex-wrap items-center justify-between mx-auto p-4 py-7 h-full">
-        <a href="#" className="flex items-center">
+    <nav className="fixed left-0 top-0 z-20 h-[100px] w-full bg-[#0D0D0D]">
+      <div className="mx-auto flex h-full max-w-[1352px] flex-wrap items-center justify-between p-4 py-7">
+        <Link href="/" className="flex items-center">
           <Image
             src="/assets/images/logo.svg"
             alt="logo"
@@ -19,11 +19,11 @@ export default function Navbar({
             height={30}
             className="w-[130px] md:w-[167px]"
           />
-        </a>
+        </Link>
         <div className="flex lg:order-2">
           <button
             type="button"
-            className="join-waitlist-btn text-white font-unbounded font-normal lg:text-xl text-base px-3 py-2 text-center mr-3 lg:mr-0"
+            className="join-waitlist-btn mr-3 px-3 py-2 text-center font-unbounded text-base font-normal text-white lg:mr-0 lg:text-xl"
             onClick={() => {
               setShowModal(true);
             }}
@@ -32,7 +32,7 @@ export default function Navbar({
           </button>
           <button
             type="button"
-            className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden"
+            className="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 lg:hidden"
             aria-controls="navbar-sticky"
             aria-expanded="false"
             onClick={() => {
@@ -43,7 +43,7 @@ export default function Navbar({
             {isActive ? (
               <svg
                 fill="#fff"
-                className="w-6 h-6"
+                className="h-6 w-6"
                 viewBox="-0.18 -0.18 0.72 0.72"
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="xMinYMin"
@@ -52,7 +52,7 @@ export default function Navbar({
               </svg>
             ) : (
               <svg
-                className="w-6 h-6"
+                className="h-6 w-6"
                 aria-hidden="true"
                 fill="#fff"
                 viewBox="0 0 20 20"
@@ -68,15 +68,31 @@ export default function Navbar({
           </button>
         </div>
         <div
-          className={`h-screen lg:h-auto bg-[#0D0D0D] items-center justify-between w-full lg:flex lg:w-auto lg:order-1 absolute z-[1] top-[100px] lg:z-auto lg:static left-0 transition-all ease-in duration-300 opacity-0 ${
+          className={`absolute left-0 top-[100px] z-[1] h-screen w-full items-center justify-between bg-[#0D0D0D] opacity-0 transition-all duration-300 ease-in lg:static lg:z-auto lg:order-1 lg:flex lg:h-auto lg:w-auto ${
             isActive ? 'opacity-100' : 'opacity-0 '
           } lg:opacity-100`}
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 text-xl lg:flex-row lg:space-x-6 lg:mt-0">
-            <li>
+          <ul className="mt-4 flex flex-col p-4 text-xl md:p-0 lg:mt-0 lg:flex-row lg:space-x-6">
+            {pathes.map((path, index) => {
+              return (
+                <li key={index}>
+                  <Link
+                    href={path.path}
+                    className={classNames(
+                      'navar-item block rounded py-2 pl-3 pr-4 font-sora font-normal text-white lg:bg-transparent lg:p-0',
+                      pathname === path.path ? 'active' : ''
+                    )}
+                    aria-current="page"
+                  >
+                    {path.name}
+                  </Link>
+                </li>
+              );
+            })}
+            {/* <li>
               <Link
-                href="#"
-                className="navar-item block py-2 pl-3 pr-4 text-white rounded lg:bg-transparent lg:p-0 font-sora font-normal active"
+                href="/"
+                className="navar-item block rounded py-2 pl-3 pr-4 font-sora font-normal text-white lg:bg-transparent lg:p-0"
                 aria-current="page"
               >
                 Home
@@ -85,15 +101,15 @@ export default function Navbar({
             <li>
               <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 lg:p-0 text-white font-sora font-normal"
+                className="block py-2 pl-3 pr-4 font-sora font-normal text-white lg:p-0"
               >
                 Features
               </Link>
             </li>
             <li>
               <Link
-                href="/blogs"
-                className="block py-2 pl-3 pr-4 lg:p-0 text-white font-sora font-normal"
+                href="/blog"
+                className="block py-2 pl-3 pr-4 font-sora font-normal text-white lg:p-0"
               >
                 Blog
               </Link>
@@ -101,7 +117,7 @@ export default function Navbar({
             <li>
               <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 lg:p-0 text-white font-sora font-normal"
+                className="block py-2 pl-3 pr-4 font-sora font-normal text-white lg:p-0"
               >
                 Testimonials
               </Link>
@@ -109,7 +125,7 @@ export default function Navbar({
             <li>
               <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 lg:p-0 text-white font-sora font-normal"
+                className="block py-2 pl-3 pr-4 font-sora font-normal text-white lg:p-0"
               >
                 Pricing
               </Link>
@@ -117,11 +133,11 @@ export default function Navbar({
             <li>
               <Link
                 href="#"
-                className="block py-2 pl-3 pr-4 lg:p-0 text-white font-sora font-normal"
+                className="block py-2 pl-3 pr-4 font-sora font-normal text-white lg:p-0"
               >
                 Contact us
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

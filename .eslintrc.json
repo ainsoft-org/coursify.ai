@@ -1,6 +1,11 @@
 {
-	"extends": "next",
-	"rules": {
-		"no-console": 1
-	}
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["next", "plugin:prettier/recommended", "plugin:@next/next/recommended"],
+  "rules": {
+    "no-console": 1
+  }
 }
